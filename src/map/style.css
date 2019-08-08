@@ -1,0 +1,10 @@
+@import '~leaflet/dist/leaflet.css';
+
+.map {
+  width: 100%;
+  height: calc(100% - 80px);
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+

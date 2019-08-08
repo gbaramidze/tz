@@ -1,0 +1,27 @@
+{
+  "LOGIN": {
+    "TITLE": "Autorisierung",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "REMEMBER": "Remember",
+    "FORGOT": "Passwort vergessen?",
+    "REGISTER": "Registration",
+    "LOGIN_BUTTON": "Login"
+  },
+  "FORGOT": {
+    "TITLE": "Passwort zurücksetzen",
+    "EMAIL": "E-Mail",
+    "PLACEHOLDER": "Bitte geben Sie eine E-Mail-Adresse ein",
+    "RECOVER": "Ihr Passwort:",
+    "FORGOT_BUTTON": "Wiederherstellung",
+    "BACK": "‹ Zurück zur Anmeldeseite "
+  },
+  "REGISTER": {
+    "TITLE": "Schnellregistrierung",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "RE_PASSWORD": "Passwort wiederholen",
+    "REGISTER_BUTTON": "Registration",
+    "BACK": "‹ Zurück zur Anmeldeseite "
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "LOGIN": {
+    "TITLE": "Login",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Password",
+    "REMEMBER": "Remember me",
+    "FORGOT": "Forgot password?",
+    "INCORRECT": "Email or password is incorrect!",
+    "REGISTER": "Register",
+    "LOGIN_BUTTON": "Sign In"
+  },
+  "FORGOT": {
+    "TITLE": "Recover Your Password",
+    "EMAIL": "E-Mail",
+    "PLACEHOLDER": "Please enter your email",
+    "RECOVER": "Your password is: ",
+    "FORGOT_BUTTON": "Recovery",
+    "BACK": "‹ Back to the login page"
+  },
+  "REGISTER": {
+    "TITLE": "Quick register",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Password",
+    "RE_PASSWORD": "Repeat Password",
+    "REGISTER_BUTTON": "Register",
+    "BACK": "‹ Back to the login page"
+  }
+}

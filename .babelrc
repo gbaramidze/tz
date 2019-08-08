@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "inline-dotenv",
+    "styled-components",
+    "@babel/plugin-transform-runtime",
+    ["module-resolver", {
+      "root": ["./src"]
+    }]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["next/babel", {
+           "preset-env": {
+              "modules": "commonjs"
+            }
+        }]
+      ]
+    }
+  }
+}

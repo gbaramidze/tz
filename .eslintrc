@@ -1,0 +1,75 @@
+{
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "arrow-parens": ["error", "as-needed"],
+        "arrow-spacing": "warn",
+        "block-spacing": "warn",
+        "brace-style": "warn",
+        "camelcase": "warn",
+        "comma-dangle": ["warn", "never"],
+        "comma-spacing": "warn",
+        "eol-last": "warn",
+        "func-call-spacing": "warn",
+        "function-paren-newline": "warn",
+        "indent": ["warn", 4, {
+            "SwitchCase": 1
+        }],
+        "jsx-a11y/label-has-for": ["error", {
+            "required": {
+                "some": ["nesting", "id"]
+            }
+        }],
+        "key-spacing": "warn",
+        "keyword-spacing": "warn",
+        "linebreak-style": ["warn", "unix"],
+        "max-len": "off",
+        "no-extra-semi": "warn",
+        "no-case-declarations": "off",
+        "no-mixed-spaces-and-tabs": "warn",
+        "no-multi-spaces": "warn",
+        "no-multiple-empty-lines": "warn",
+        "no-param-reassign": ["error", { "props": false }],
+        "no-spaced-func": "warn",
+        "no-tabs": "warn",
+        "no-trailing-spaces": "warn",
+        "no-useless-escape": "off",
+        "object-curly-newline": "warn",
+        "object-curly-spacing": "off",
+        "one-var": "off",
+        "padded-blocks": "off",
+        "prefer-const": "off",
+        "quote-props": "warn",
+        "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+        "react/prop-types": "off",
+        "react/no-unused-state": "off",
+        "react/destructuring-assignment": "off",
+        "react/jsx-boolean-value": ["error", "always"],
+        "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+        "react/jsx-closing-bracket-location": "off",
+        "react/jsx-indent": ["warn", 4],
+        "react/jsx-indent-props": ["warn", 4],
+        "react/jsx-tag-spacing": "off",
+        "semi": "warn",
+        "semi-spacing": "warn",
+        "space-before-blocks": "warn",
+        "space-before-function-paren": "warn",
+        "space-in-parens": "warn",
+        "space-infix-ops": "warn",
+        "spaced-comment": "off",
+        "valid-typeof": "off"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "shared-node-browser": true,
+        "jquery": true,
+        "jest": true
+    }
+}
