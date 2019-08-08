@@ -14,10 +14,6 @@ $radius: 2px;
 
 .container {
   width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  height: 100%;
 }
 
 .language-picker {
@@ -54,5 +50,17 @@ $radius: 2px;
   cursor: pointer;
   &:hover {
     color: #ccc
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapse.navbar-collapse {
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+  }
+  .account.navbar-text {
+    font-size: 14px;
+    padding-bottom: 0
   }
 }

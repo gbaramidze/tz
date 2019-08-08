@@ -68,7 +68,8 @@
     left: 0;
     top: 80px;
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100vh - 80px);
+    box-shadow: none;
     border-radius: 0;
   }
   .forgot input {

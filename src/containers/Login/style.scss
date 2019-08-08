@@ -68,11 +68,9 @@
     left: 0;
     top: 80px;
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100vh - 80px);
     border-radius: 0;
-  }
-  .login input {
-    margin: 10px 0;
+    box-shadow: none;
   }
 }
 
