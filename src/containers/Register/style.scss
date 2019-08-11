@@ -1,3 +1,5 @@
+@import "../../../static/css/variables";
+
 .register {
   position: absolute;
   margin: auto;
@@ -5,9 +7,9 @@
   left: calc(50% - (400px/2));
   width: 400px;
   height: auto;
-  background: #fff;
+  background: $primaryBg;
   border-radius: 4px;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px $primaryBorder;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -27,29 +29,6 @@
   }
 }
 
-.register button.sign {
-  background: #5b58cc;
-  color: #fff;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 24px;
-  text-align: center;
-  width: 100%;
-  border: 1px solid #402599;
-  box-shadow: 0 -2px 2px inset #453fcc;
-}
-.register button.sign:hover {
-  background: #453fcc;
-  color: #fff;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 24px;
-  text-align: center;
-  width: 100%;
-  border: 1px solid #402599;
-  box-shadow: 0 2px 2px inset #5b58cc;
-}
-
 .actions {
   display: flex;
   flex-direction: row;
@@ -57,9 +36,11 @@
 }
 
 .pseudo-link {
-  color: #107bec;
+  color: $urlColor;
   cursor: pointer;
   font-weight: 500;
+  border:0;
+  background: transparent;
 }
 
 @media screen and (max-width: 400px) {

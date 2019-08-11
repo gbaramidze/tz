@@ -1,3 +1,3 @@
-import Main from 'containers/Main'
+import Main from '../src/containers/Main'
 
 export default Main

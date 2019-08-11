@@ -2,9 +2,10 @@ import withRedux from 'next-redux-wrapper'
 import { withRouter } from 'next/router'
 import { Provider } from 'react-redux'
 import App, { Container } from 'next/app'
-import createStore from 'store/createStore'
+import createStore from '../src/store/createStore'
 import Navigation from "../src/components/Navigation";
 import "../static/css/bootstrap.css";
+import React from 'react'
 
 class MyApp extends App {
   static async getInitialProps ({ Component, ctx }) {

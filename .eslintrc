@@ -1,11 +1,11 @@
 {
-    "settings": {
-        "import/resolver": {
-            "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
-            }
-        }
-    },
+    "extends":  [
+        "airbnb",
+        "plugin:jsx-a11y/recommended",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
     "rules": {
         "arrow-parens": ["error", "as-needed"],
         "arrow-spacing": "warn",
@@ -20,11 +20,6 @@
         "indent": ["warn", 4, {
             "SwitchCase": 1
         }],
-        "jsx-a11y/label-has-for": ["error", {
-            "required": {
-                "some": ["nesting", "id"]
-            }
-        }],
         "key-spacing": "warn",
         "keyword-spacing": "warn",
         "linebreak-style": ["warn", "unix"],
@@ -37,6 +32,7 @@
         "no-param-reassign": ["error", { "props": false }],
         "no-spaced-func": "warn",
         "no-tabs": "warn",
+        "no-shadow": ["error", { "builtinGlobals": false, "hoist": "functions", "allow": [] }],
         "no-trailing-spaces": "warn",
         "no-useless-escape": "off",
         "object-curly-newline": "warn",
@@ -62,7 +58,8 @@
         "space-in-parens": "warn",
         "space-infix-ops": "warn",
         "spaced-comment": "off",
-        "valid-typeof": "off"
+        "valid-typeof": "off",
+        "@typescript-eslint/explicit-member-accessibility": "error"
     },
     "env": {
         "browser": true,
@@ -71,5 +68,20 @@
         "shared-node-browser": true,
         "jquery": true,
         "jest": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx", ".flow"]
+            }
+        }
+    },
+    "parser":  "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": false
+        }
     }
 }
