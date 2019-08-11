@@ -22,7 +22,7 @@
         }],
         "key-spacing": "warn",
         "keyword-spacing": "warn",
-        "linebreak-style": ["warn", "unix"],
+        "linebreak-style": "off",
         "max-len": "off",
         "no-extra-semi": "warn",
         "no-case-declarations": "off",
