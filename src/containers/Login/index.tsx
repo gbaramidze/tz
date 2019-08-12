@@ -1,4 +1,4 @@
-import React, {FormEvent, ReactElement} from 'react';
+import React, {FormEvent} from 'react';
 import {connect} from 'react-redux';
 import {Button, Container, Form} from 'react-bootstrap';
 import './style.scss';

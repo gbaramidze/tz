@@ -8,7 +8,7 @@ import {Account} from '../interface/account';
 import {Locales} from '../interface/locales';
 import {Dispatch} from '../interface/dispatch';
 // components
-import Map from '../map';
+import Map from '../components/map';
 import Login from './Login';
 import Forgot from './Forgot';
 import Register from './Register';
@@ -50,7 +50,12 @@ class Main extends Component<MainProps, MainState> {
         if (process.browser) {
             this.setDefaultPos();
             setTimeout((): void => {
-                const defaultPos = this.props.router.query.pos ? this.props.router.query.pos.toString().split(',') : this.defaultPos();
+                // console.log(typeof this.props.router.query.pos)
+                // const pos: string[] = this.props.router.query.pos;
+                let defaultPos = this.defaultPos();
+                if (this.props.router.query.pos && typeof this.props.router.query.pos === 'string') {
+                    defaultPos = this.props.router.query.pos.split(',');
+                }
                 const defaultZoom = this.props.router.query.zoom.toString() || '12';
                 this.setUrl(defaultPos.join(','), defaultZoom);
             }, 10);
@@ -81,14 +86,14 @@ class Main extends Component<MainProps, MainState> {
         if (navigator.geolocation && !router.query.pos) {
             navigator.geolocation.getCurrentPosition((pos): void => {
                 const {latitude, longitude} = pos.coords;
-                that.setUrl([latitude, longitude].join(','), router.query.zoom.toString() || '12');
+                that.setUrl([latitude, longitude].join(','), router.query.zoom ? router.query.zoom.toString() : '12');
             });
         }
     };
 
-    private defaultPos = (): number[] => {
+    private defaultPos = (): string[] => {
         const {defaultPosition} = this.state;
-        return defaultPosition;
+        return defaultPosition.map((item): string => item.toString());
     };
 
     private setUrl = (newPos: string, zoom: string): void => {
