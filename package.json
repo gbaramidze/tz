@@ -18,7 +18,7 @@
     "helmet": "^3.12.1",
     "humps": "^2.0.1",
     "leaflet": "^1.5.1",
-    "next": "^9.0.0",
+    "next": "^9.3.2",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.1.2",
     "next-redux-wrapper": "^2.1.0",
