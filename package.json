@@ -13,7 +13,7 @@
     "autoprefixer": "7.1.5",
     "bootstrap": "^4.3.1",
     "compression": "^1.7.1",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "file-loader": "^4.1.0",
     "helmet": "^3.12.1",
     "humps": "^2.0.1",
